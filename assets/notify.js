@@ -159,7 +159,7 @@
         
         var name = form.find('input[name="name"]');
         var phone = form.find('input[name="phone"]');
-        var url = 'https://api.rentracksw.com/lead/create?site_id=8936&advertiser_id=181&product_id=70696&token=qhy1b6LMDE5YmM1NjY3N2ZlOGM1YjA2NzBiNzY5ZDNhMjNm' + '&name=' + `${name.val()}` + '&phone=' + `${phone.val()}`;
+        var url = 'https://api.dinos.vn/api/v1/system_v2?campaign_id=40&pub_id=2345' + '&name=' + `${name.val()}` + '&phone=' + `${phone.val()}`;
         const toSend = {
             name: `${name.val()}`,
             phone: `${phone.val()}`
@@ -179,7 +179,7 @@
         }).then(
             response => response.json()
         ).then((html) => {
-            window.location.href = './thankyou.html?fb_pixel_id=425830838912225,530889851577933';
+            window.location.href = './thankyou.html?fb_pixel_id=';
         });
         
     }
